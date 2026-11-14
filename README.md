@@ -71,3 +71,10 @@ d:\Yash\
 │   └── app.js            # Controllers, search, modals, quiz, comparator
 └── README.md             # Project documentation
 ```
+
+---
+
+## 👨‍💻 Author & Creator
+
+**Made with ❤️ by Yashaditya** ([@yashadi1727U](https://github.com/yashadi1727U))
+
