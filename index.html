@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KhelBharat | Top 10 Sports Played in India (Players, Rules & Grounds)</title>
+  <meta name="description" content="Explore the top 10 sports played in India with complete details on legendary players, official rules, ground/court dimensions, and sporting heritage.">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            saffron: '#f97316',
+            indiaGreen: '#10b981',
+            chakra: '#2563eb',
+            darkBg: '#0b0f19'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-darkBg text-slate-100 min-h-screen antialiased flex flex-col justify-between selection:bg-amber-500 selection:text-slate-900">
+
+  <!-- Sticky Navbar -->
+  <header class="sticky top-0 z-40 bg-slate-950/85 backdrop-blur-xl border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-saffron via-white to-indiaGreen p-0.5 shadow-lg shadow-orange-950/40 group-hover:scale-105 transition-transform">
+          <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+            <span class="text-xl">🇮🇳</span>
+          </div>
+        </div>
+        <div>
+          <span class="text-xl font-black tracking-tight text-white flex items-center gap-1 font-heading">
+            Khel<span class="text-saffron">Bharat</span>
+          </span>
+          <span class="text-[10px] block font-semibold text-slate-400 uppercase tracking-widest -mt-1 font-indic">खेल भारत</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-300">
+        <a href="#sportsSection" class="hover:text-amber-400 transition">Top 10 Sports</a>
+        <a href="#groundComparisonSection" class="hover:text-sky-400 transition">Ground Scale Comparison</a>
+        <a href="#quizSection" class="hover:text-emerald-400 transition">Sports Quiz</a>
+        <a href="#heritageSection" class="hover:text-rose-400 transition">National Heritage</a>
+      </nav>
+
+      <!-- Search Jump & Bookmark Counter -->
+      <div class="flex items-center gap-2">
+        <a href="#sportsSection" class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-700/80 text-xs font-semibold text-slate-300 hover:text-white hover:border-slate-500 transition">
+          <span>⭐ Bookmarks:</span>
+          <span id="bookmarksCountBadge" class="px-1.5 py-0.2 rounded bg-amber-500/20 text-amber-300 font-bold">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="flex-1">
+
+    <!-- Hero Section -->
+    <section class="relative pt-16 pb-20 overflow-hidden tricolor-glow border-b border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <!-- Tricolor Pill Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/90 border border-slate-700 text-xs font-semibold text-slate-300 mb-6 shadow-xl subtle-pulse">
+          <span class="w-2 h-2 rounded-full bg-saffron"></span>
+          <span class="w-2 h-2 rounded-full bg-white"></span>
+          <span class="w-2 h-2 rounded-full bg-indiaGreen"></span>
+          <span>Comprehensive Encyclopedia of Indian Sporting Passion</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight mb-6 font-heading">
+          Top 10 Sports Played in <br class="hidden sm:inline">
+          <span class="bg-gradient-to-r from-saffron via-amber-200 to-indiaGreen bg-clip-text text-transparent">
+            India & Their Complete Playbook
+          </span>
+        </h1>
+
+        <p class="max-w-3xl mx-auto text-base sm:text-lg text-slate-300 leading-relaxed mb-10">
+          From the dusty gully pitches of cricket and village Akhadas of wrestling to Olympic podiums and double Olympiad golds — explore the rules, official ground dimensions, legendary icons, and tactical masteries of India's favorite sports.
+        </p>
+
+        <!-- Quick Stats Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto mb-10">
+          <div class="glass-panel p-4 rounded-2xl border border-slate-800">
+            <span class="text-3xl font-extrabold text-amber-400 block font-heading">1.4B+</span>
+            <span class="text-xs text-slate-400 font-medium">Sports Enthusiasts</span>
+          </div>
+          <div class="glass-panel p-4 rounded-2xl border border-slate-800">
+            <span class="text-3xl font-extrabold text-sky-400 block font-heading">10 Sports</span>
+            <span class="text-xs text-slate-400 font-medium">In-Depth Profiles</span>
+          </div>
+          <div class="glass-panel p-4 rounded-2xl border border-slate-800">
+            <span class="text-3xl font-extrabold text-emerald-400 block font-heading">45+</span>
+            <span class="text-xs text-slate-400 font-medium">Legendary Indian Heroes</span>
+          </div>
+          <div class="glass-panel p-4 rounded-2xl border border-slate-800">
+            <span class="text-3xl font-extrabold text-purple-400 block font-heading">100%</span>
+            <span class="text-xs text-slate-400 font-medium">Regulation Dimensions</span>
+          </div>
+        </div>
+
+        <!-- Quick Jump Pills -->
+        <div class="flex items-center justify-center flex-wrap gap-2 text-xs font-semibold text-slate-300">
+          <span class="text-slate-400">Quick Jump:</span>
+          <button onclick="document.getElementById('searchInput').value='Cricket'; document.getElementById('searchInput').dispatchEvent(new Event('input'));" class="px-3 py-1 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 transition">🏏 Cricket</button>
+          <button onclick="document.getElementById('searchInput').value='Kabaddi'; document.getElementById('searchInput').dispatchEvent(new Event('input'));" class="px-3 py-1 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 transition">🤼 Kabaddi</button>
+          <button onclick="document.getElementById('searchInput').value='Badminton'; document.getElementById('searchInput').dispatchEvent(new Event('input'));" class="px-3 py-1 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 transition">🏸 Badminton</button>
+          <button onclick="document.getElementById('searchInput').value='Hockey'; document.getElementById('searchInput').dispatchEvent(new Event('input'));" class="px-3 py-1 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 transition">🏑 Hockey</button>
+          <button onclick="document.getElementById('searchInput').value='Football'; document.getElementById('searchInput').dispatchEvent(new Event('input'));" class="px-3 py-1 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 transition">⚽ Football</button>
+          <button onclick="document.getElementById('searchInput').value='Chess'; document.getElementById('searchInput').dispatchEvent(new Event('input'));" class="px-3 py-1 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 transition">♟️ Chess</button>
+          <button onclick="document.getElementById('searchInput').value='Kho-Kho'; document.getElementById('searchInput').dispatchEvent(new Event('input'));" class="px-3 py-1 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 transition">🏃 Kho-Kho</button>
+          <button onclick="document.getElementById('searchInput').value='Wrestling'; document.getElementById('searchInput').dispatchEvent(new Event('input'));" class="px-3 py-1 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 transition">🤼‍♂️ Wrestling</button>
+          <button onclick="document.getElementById('searchInput').value='Table Tennis'; document.getElementById('searchInput').dispatchEvent(new Event('input'));" class="px-3 py-1 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 transition">🏓 Table Tennis</button>
+          <button onclick="document.getElementById('searchInput').value='Athletics'; document.getElementById('searchInput').dispatchEvent(new Event('input'));" class="px-3 py-1 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 transition">🏃‍♂️ Athletics</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filters Bar -->
+    <section id="sportsSection" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="glass-panel p-4 sm:p-6 rounded-2xl border border-slate-800 mb-8 space-y-4">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <!-- Search Input -->
+          <div class="relative w-full sm:max-w-md">
+            <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+              🔍
+            </span>
+            <input 
+              type="text" 
+              id="searchInput" 
+              placeholder="Search by sport, player (e.g. Kohli, Sindhu, Neeraj), or rules..." 
+              class="w-full pl-10 pr-10 py-3 bg-slate-900/90 border border-slate-700 rounded-xl text-sm text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+            >
+            <button id="clearSearchBtn" class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-white hidden">
+              ✕
+            </button>
+          </div>
+
+          <!-- Counter Badge -->
+          <span id="searchCountBadge" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-slate-900 text-sky-400 border border-slate-800 whitespace-nowrap">
+            10 of 10 Sports
+          </span>
+        </div>
+
+        <!-- Category Filters -->
+        <div id="categoryFilters" class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none text-xs font-semibold">
+          <button class="px-3.5 py-2 rounded-xl bg-blue-600 text-white border border-blue-500 transition whitespace-nowrap" data-category="all">
+            All 10 Sports
+          </button>
+          <button class="px-3.5 py-2 rounded-xl bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition whitespace-nowrap" data-category="team">
+            👥 Team Field Sports
+          </button>
+          <button class="px-3.5 py-2 rounded-xl bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition whitespace-nowrap" data-category="indigenous">
+            🤼 Indigenous & Traditional
+          </button>
+          <button class="px-3.5 py-2 rounded-xl bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition whitespace-nowrap" data-category="racket">
+            🏸 Racket & Precision
+          </button>
+          <button class="px-3.5 py-2 rounded-xl bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition whitespace-nowrap" data-category="combat-mind">
+            ♟️ Mind & Combat
+          </button>
+          <button class="px-3.5 py-2 rounded-xl bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition whitespace-nowrap" data-category="track">
+            🏃‍♂️ Track & Field
+          </button>
+          <button class="px-3.5 py-2 rounded-xl bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition whitespace-nowrap" data-category="bookmarked">
+            ⭐ Bookmarked
+          </button>
+        </div>
+      </div>
+
+      <!-- Sports Cards Grid -->
+      <div id="sportsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Populated via app.js -->
+      </div>
+    </section>
+
+    <!-- Ground & Court Scale Comparison Tool -->
+    <section id="groundComparisonSection" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-800">
+      <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-slate-800">
+        <div class="max-w-3xl mb-8">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-blue-950 text-blue-300 border border-blue-800 text-xs font-bold mb-3">
+            <span>📐 Architectural Analysis</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2 font-heading">
+            Sports Ground & Court Scale Comparison
+          </h2>
+          <p class="text-sm text-slate-400">
+            Compare the relative playing surface area of India's top 10 sports. Discover how giant cricket outfields contrast with compact kabaddi mats and high-precision table tennis boards.
+          </p>
+        </div>
+
+        <!-- Scale Bars Container -->
+        <div id="comparisonContainer" class="space-y-4 max-w-4xl">
+          <!-- Populated via app.js -->
+        </div>
+
+        <!-- Fun Comparison Fact Box -->
+        <div class="mt-8 p-4 rounded-xl bg-slate-900/90 border border-slate-800 flex items-start gap-3 text-xs text-slate-300">
+          <span class="text-xl">💡</span>
+          <div>
+            <strong class="text-amber-400 font-semibold block mb-0.5">Mind-Blowing Scale Fact:</strong>
+            A standard Cricket ground (~15,400 m²) could fit over <strong>118 Kabaddi mats</strong>, <strong>188 Badminton courts</strong>, or over <strong>3,600 Table Tennis tables</strong> inside its boundary rope!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Sports Trivia Quiz Section -->
+    <section id="quizSection" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-800">
+      <div class="glass-panel-elevated p-6 sm:p-10 rounded-3xl border border-slate-700/80 max-w-3xl mx-auto">
+        <div class="text-center mb-8">
+          <span class="text-4xl mb-3 block">🧠</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-2 font-heading">Test Your Indian Sports IQ</h2>
+          <p class="text-sm text-slate-400">Answer 10 trivia questions covering pitch lengths, iconic legends, historical milestones, and rules.</p>
+        </div>
+
+        <!-- Quiz Progress & Score Header -->
+        <div class="flex items-center justify-between pb-4 border-b border-slate-800 text-xs font-semibold mb-6">
+          <span id="quizProgress" class="text-sky-400">Question 1 of 10</span>
+          <span id="quizScoreBadge" class="px-2.5 py-1 rounded-md bg-slate-800 text-amber-400 border border-slate-700">Score: 0/0</span>
+        </div>
+
+        <!-- Quiz Card -->
+        <div id="quizCard" class="space-y-6">
+          <h3 id="quizQuestionText" class="text-lg font-bold text-white leading-relaxed">
+            Loading question...
+          </h3>
+
+          <div id="quizOptionsContainer" class="space-y-3">
+            <!-- Populated via app.js -->
+          </div>
+
+          <div id="quizExplanation" class="hidden">
+            <!-- Populated on answer -->
+          </div>
+
+          <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+            <button id="resetQuizBtn" class="text-xs text-slate-400 hover:text-slate-200 transition">
+              Restart Quiz
+            </button>
+            <button id="nextQuizBtn" class="px-5 py-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-xl shadow-lg shadow-blue-900/30 transition hidden">
+              Next Question &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Quiz Result Box -->
+        <div id="quizResultBox" class="hidden">
+          <!-- Populated when quiz finishes -->
+        </div>
+      </div>
+    </section>
+
+    <!-- National Sporting Heritage & Khelo India -->
+    <section id="heritageSection" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-800">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+          <div class="text-3xl mb-3">🏅</div>
+          <h3 class="text-lg font-bold text-white mb-2 font-heading">Olympic Resurgence</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            From Neeraj Chopra's historic Athletics Gold to back-to-back Olympic hockey medals in Tokyo and Paris, India has entered a golden era of multisport world dominance.
+          </p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+          <div class="text-3xl mb-3">🔥</div>
+          <h3 class="text-lg font-bold text-white mb-2 font-heading">Khelo India Revolution</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            The national grassroots initiative identifying and nurturing thousands of young talents across rural districts, providing world-class coaching, equipment, and annual scholarships.
+          </p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+          <div class="text-3xl mb-3">🌟</div>
+          <h3 class="text-lg font-bold text-white mb-2 font-heading">Indigenous Sports Glory</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Traditional Indian soil sports like Kabaddi and Kho-Kho have been modernized with high-octane televised leagues (PKL and UKK), inspiring millions of young athletes nationwide.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Deep-Dive Modal Container -->
+  <div id="sportModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 hidden">
+    <div id="modalContainer" class="w-full max-w-4xl modal-enter">
+      <!-- Injected dynamically by app.js -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 border-t border-slate-800 py-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl">🇮🇳</span>
+        <div>
+          <p class="text-white font-bold text-sm">KhelBharat (खेल भारत)</p>
+          <p class="text-slate-400">Celebrating the Top 10 Sports, Champions, and Playgrounds of India.</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-6 text-slate-400">
+        <a href="#sportsSection" class="hover:text-white transition">Sports Directory</a>
+        <a href="#groundComparisonSection" class="hover:text-white transition">Ground Dimensions</a>
+        <a href="#quizSection" class="hover:text-white transition">Sports Quiz</a>
+        <a href="#" class="hover:text-white transition">Back to Top ↑</a>
+      </div>
+
+      <p class="text-slate-400">
+        Crafted for Indian sports lovers & athletes. All dimensions conform to official federation standards.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/sportsData.js"></script>
+  <script src="js/groundDiagrams.js"></script>
+  <script src="js/quizData.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

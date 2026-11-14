@@ -1,0 +1,140 @@
+/* KhelBharat - Custom Styles & Animations */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rozha+One&display=swap');
+
+:root {
+  --primary-saffron: #f97316;
+  --primary-emerald: #10b981;
+  --primary-navy: #0f172a;
+  --primary-chakra: #2563eb;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #0b0f19;
+  color: #f1f5f9;
+}
+
+h1, h2, h3, .font-heading {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-indic {
+  font-family: 'Rozha One', serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(17, 24, 39, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-elevated {
+  background: rgba(30, 41, 59, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+}
+
+/* Tricolor Subtle Gradients */
+.tricolor-glow {
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.15) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(16, 185, 129, 0.15) 100%);
+}
+
+.tricolor-border {
+  border-image: linear-gradient(to right, #f97316, #f8fafc, #10b981) 1;
+}
+
+/* Sport Card Hover Transitions */
+.sport-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sport-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.6), 0 0 20px 2px rgba(56, 189, 248, 0.15);
+}
+
+/* Tab active state transitions */
+.tab-btn {
+  transition: all 0.2s ease-in-out;
+}
+
+.tab-btn.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-color: #3b82f6;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+}
+
+/* Ground Visualizer Animations */
+.ground-container svg {
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+  transition: transform 0.3s ease;
+}
+
+/* Audio Wave Animation */
+@keyframes soundwave {
+  0%, 100% { height: 6px; }
+  50% { height: 18px; }
+}
+
+.sound-bar {
+  display: inline-block;
+  width: 3px;
+  background-color: #38bdf8;
+  border-radius: 2px;
+  animation: soundwave 1s infinite ease-in-out;
+}
+
+.sound-bar:nth-child(2) { animation-delay: 0.2s; }
+.sound-bar:nth-child(3) { animation-delay: 0.4s; }
+
+/* Modal Animation */
+.modal-enter {
+  animation: modalFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Hero Badge Pulse */
+@keyframes subtlePulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+.subtle-pulse {
+  animation: subtlePulse 3s infinite ease-in-out;
+}
